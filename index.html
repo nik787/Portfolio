@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Сайт фронтенд разработчика Веткина Никиты</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="wrapper">
+        <div class="navigation__container">
+          <a class="navigation__logo" href="index.html">
+            <img class="logo" src="img/logo.svg" width="200" height="31" alt="Никита Веткин">
+          </a>
+          <a href="" class="navigation__burger">
+            <span></span>
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">О себе</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#portfolio">Мои работы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <h1 class="visually-hidden">Сайт фронтенд разработчика Веткина Никиты</h1>
+      <section class="section about" id="about">
+        <div class="wrapper">
+          <h2 class="title about__title">О себе</h2>
+          <figure class="about__img">
+            <img class="image" src="img/me.jpg" alt="Я в костюме, на зеленом размытом фоне" width="300" height="300">
+          </figure>
+          <p class="about__text">
+            Меня зовут Никита, я родился и вырос в городе Санкт-Петербург. Хорошо знаю HTML/CSS, пишу красивый, валидный, а главное удобный в дальнейшем использовании код.
+            Постоянно ищу что то новое и развиваюсь в этой сфере.
+          </p>
+          <p class="about__text">
+            <strong>Ключевые навыки: </strong>
+            HTML, CSS, JS, Семантическая/aдаптивная/валидная/кроссбраузерная верстка
+          </p>
+          <p class="about__text">
+            <strong>Технологии: </strong>
+            Gulp, less, Git, БЭМ, Mobile First.
+          </p>
+        </div>
+      </section>
+      <section class="section portfolio" id="portfolio">
+        <div class="wrapper">
+          <h2 class="title portfolio__title">Мои работы</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a class="portfolio__link" target="_blank" href="https://htmlacademy-htmlcss.github.io/643799-nerds-26/master/">
+                <article class="portfolio-card">
+                  <img class="portfolio-card__img" width="318" height="180" src="img/nerds-preview.jpg" alt="Сайт дизайн-студии">
+                  <div class="portfolio-card__content">
+                    <h3 class="portfolio-card__title">Нёрдс</h3>
+                    <span class="portfolio-card__desc">Сайт дизайн-студии (учебный&nbsp;проект)</span>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" target="_blank" href="https://htmlacademy-htmlcss.github.io/643799-technomart-26/master/">
+                <article class="portfolio-card">
+                  <img class="portfolio-card__img" width="318" height="180" src="img/technomart-preview.jpg" alt="Интернет-магазин инструмента и стройматериалов">
+                  <div class="portfolio-card__content">
+                    <h3 class="portfolio-card__title">Техномарт</h3>
+                    <span class="portfolio-card__desc">Интернет-магазин инструмента и стройматериалов (учебный&nbsp;проект)</span>
+                  </div>
+                </article>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <div class="wrapper">
+          <h2 class="title contact__title">Форма для связи</h2>
+          <form class="contact__form form" action="http://echo.htmlacademy.ru/" method="post">
+            <label class="form__label" for="name">Ваше имя:</label>
+            <input class="form__input" id="name" type="text">
+            <label class="form__label" for="email">Ваш email:</label>
+            <input class="form__input" id="email" type="email" placeholder="">
+            <label class="form__label" for="message">Ваше сообщение:</label>
+            <textarea class="form__textarea" name="message" id="message"></textarea>
+            <button class="button form__button button--submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__container">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/id217980116" target="_blank">
+                <span class="visually-hidden">Страница в ВКонтакте</span>
+                <svg class="icon" width="20" height="20" viewBox="1 -104 512 511" xmlns="http://www.w3.org/2000/svg"><path d="M457 202h-1l-22-23c-5-7-4-12 0-19l26-36c34-46 56-78 51-100l-2-12H383c0 1-7 30-35 79-20 35-33 47-38 49v-1c-2-2-5-7-6-20s0-30 1-46c1-18 2-34 0-46l-4-19c-4 0-21-7-68-7-41-1-53 5-59 10l-20 17 25 9c9 3 12 6 15 24 2 12 3 32 1 50-3 25-9 30-9 30-1-1-10-4-26-38-11-23-21-50-28-70L122 5H0l8 20c33 85 63 151 103 199 45 53 100 80 175 80h15v-15c0-14 1-24 4-31l5-13c3-6 6-8 8-9l7 3c9 7 16 15 23 24 10 13 21 26 38 34 9 5 26 8 35 8l91-1-1-15c-1-23-19-53-54-87zm-35 72c-7 1-19-2-23-3-11-6-19-16-28-27-8-10-16-20-28-29-9-7-18-9-24-9l-8 1c-7 2-18 7-27 24-3 5-6 10-8 17l-5 26c-56-3-100-25-137-69-34-41-61-98-90-171h57l3 9c8 22 18 51 30 76 17 36 33 52 52 52 9 0 17-4 23-11 9-11 14-28 16-53 2-19 0-39-1-50-2-9-3-18-8-26 19-1 44 0 60 3 1 7 0 23-1 38-2 36-4 73 15 90l7 5 10 3c3-1 25 10 66-62 13-23 25-49 32-67h73c-8 20-29 47-42 65l-28 39c-11 20-9 37 2 52 7 9 23 24 26 27 24 23 35 39 41 50h-55zm0 0"/></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="https://www.instagram.com/nikita_vetkin/" target="_blank">
+                <span class="visually-hidden">Страница в Instagram</span>
+                <svg class="icon" width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M75 512h362c41 0 75-34 75-75V75c0-41-34-75-75-75H75C34 0 0 34 0 75v362c0 41 34 75 75 75zM30 75c0-25 20-45 45-45h362c25 0 45 20 45 45v362c0 25-20 45-45 45H75c-25 0-45-20-45-45zm0 0"/><path d="M256 391a135 135 0 100-270 135 135 0 000 270zm0-240a105 105 0 110 210 105 105 0 010-210zm0 0M406 151a45 45 0 100-90 45 45 0 000 90zm0-60a15 15 0 110 30 15 15 0 010-30zm0 0"/></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://tlgg.ru/nik768" target="_blank">
+                <span class="visually-hidden">Мой Телеграм</span>
+                <svg class="icon" width="20" height="20" viewBox="1 -35 512 511" xmlns="http://www.w3.org/2000/svg"><path d="M121 253l64 159 83-83 141 113L512 0 0 206zm-39-47l244-98-195 117zm287-90L207 264l-19 74-36-90zM219 336l10-37 15 12zm172 53L243 272 465 69zm0 0"/></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--git" href="https://github.com/nik787" target="_blank">
+                <span class="visually-hidden">Страница на GitHub</span>
+                <svg class="icon" width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0a256 256 0 100 512 256 256 0 000-512zm45 478a222 222 0 01-90 0v-71c0-16 5-22 11-31l18-27-23-3c-59-9-83-40-92-64-12-32-6-72 16-98 3-4 6-10 3-17-4-14-4-36-1-44 16 2 33 13 46 22 7 3 10 2 13 3 11-3 28-8 54-8 17 0 34 2 50 7 3 0 8 2 17-2 14-9 30-20 46-22 3 8 3 30-1 44-3 7 0 13 3 17 22 26 28 66 16 98-9 24-33 55-92 64l-23 3 19 27c5 9 10 15 10 31zm30-9v-62c0-17-4-28-8-37 45-12 78-39 92-78 15-40 8-89-17-123 4-20 4-52-6-67-5-6-12-10-20-10-24 1-42 13-62 25a212 212 0 00-108 0c-21-13-39-24-63-25-7 0-14 4-19 10-10 15-10 47-6 67-25 34-32 83-17 123 14 39 47 66 92 78-3 7-6 15-7 27-10 3-18 4-25 2-8-3-14-8-19-17-12-20-33-36-56-34l3 30c11-1 21 10 27 20 9 15 21 25 36 29 12 4 22 4 33 1v41a225 225 0 11301-212c0 98-64 181-151 212zm0 0"/></svg>
+              </a>
+            </li>
+          </ul>
+          <span class="copyright">© 2019 Nikita Vetkin</span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
