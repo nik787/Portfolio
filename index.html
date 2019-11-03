@@ -88,14 +88,15 @@
       <section class="section contact" id="contact">
         <div class="wrapper">
           <h2 class="title contact__title">Форма для связи</h2>
-          <form class="contact__form form" action="http://echo.htmlacademy.ru/" method="post">
+          <form class="contact__form form" action="https://formspree.io/xpzaejdn" method="post">
             <label class="form__label" for="name">Ваше имя:</label>
-            <input class="form__input" id="name" type="text">
+            <input class="form__input" id="name" name="name" type="text">
             <label class="form__label" for="email">Ваш email:</label>
-            <input class="form__input" id="email" type="email" placeholder="">
+            <input class="form__input" id="email" name="email" type="email" placeholder="">
             <label class="form__label" for="message">Ваше сообщение:</label>
             <textarea class="form__textarea" name="message" id="message"></textarea>
             <button class="button form__button button--submit" type="submit">Отправить</button>
+            <div class="form__status"></div>
           </form>
         </div>
       </section>

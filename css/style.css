@@ -321,6 +321,9 @@ img {
 
   transition: all 0.2s;
 }
+input:invalid {
+  box-shadow: 0 12px 30px 0 tomato;
+}
 .form__textarea {
   height: 200px;
 
